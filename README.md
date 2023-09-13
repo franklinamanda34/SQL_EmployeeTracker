@@ -31,6 +31,8 @@ Franklinamanda34@outlook.com
 
 
 
+Here is a link to the walkthrough:
+https://drive.google.com/file/d/15x7Y5aUn3Wl9c5kQUWFDvsHd09VN--6V/view
 
 
 
