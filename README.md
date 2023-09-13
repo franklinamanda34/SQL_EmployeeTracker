@@ -30,3 +30,31 @@ Feel free to contact me with questions /imporvements/comments using this email:
 Franklinamanda34@outlook.com
 
 
+
+
+
+
+
+THe following code was sourced from ChatGPT to help guide me (found in the index.js file)
+
+.then((answers) => {
+      // Convert the role_id and manager_id to integers (assuming they are numeric in your database)
+      const roleID = parseInt(answers.role_id);
+      const managerID = answers.manager_id === '' ? null : parseInt(answers.manager_id);
+
+      // Check if roleID is a valid number, otherwise, return an error
+      if (isNaN(roleID)) {
+        console.error('Invalid role ID. Please enter a valid numeric role ID.');
+        startApp();
+        return;
+      }
+
+      // Define the SQL query with placeholders
+      const query = 'INSERT INTO Employee (first_name, last_name, role_id, manager_id) VALUES (?, ?, ?, ?)';
+      // Define the values array with user input
+      const values = [answers.first_name, answers.last_name, roleID, managerID];
+
+{
+
+
+
